@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ClockContainer from '../ClockContainer/ClockContainer';
+import WeatherContainer from '../WeatherContainer/WeatherContainer';
 
 class Layout extends Component {
   constructor(props) {
@@ -31,6 +32,8 @@ class Layout extends Component {
         <ClockContainer
           handleClockClick={this.handleClockClick}
           clockPosition={clockPosition}
+        />
+        <WeatherContainer
         />
       </div>
     );

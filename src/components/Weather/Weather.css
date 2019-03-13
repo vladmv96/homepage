@@ -1,0 +1,17 @@
+.weather-container {
+    position: absolute;
+    cursor: default;
+    top: 0;
+    right: 0;
+}
+
+.weather-temperatura {
+    margin: 5px 15px 0 0;
+    font-size: 70px;
+}
+
+.weather-location {
+    margin: 5px 15px 0 0;
+    text-align: right;
+    font-size: 30px;
+}
