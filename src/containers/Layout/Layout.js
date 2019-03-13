@@ -7,11 +7,16 @@ class Layout extends Component {
       super(props);
       this.state = {
         clockPosition: 'center',
+        weatherView: 'closed',
       }
   }
 
   handleClockClick = () => {
     this.changeClockPosition();
+  }
+
+  handleWeatherClick = () => {
+    this.changeWeatherView();
   }
 
   changeClockPosition = () => {
@@ -23,9 +28,18 @@ class Layout extends Component {
     }
   }
 
+  changeWeatherView = () => {
+    const {weatherView} = this.state;
+    if (weatherView === 'opened') {
+      this.setState({weatherView: 'closed'});
+    } else {
+      this.setState({weatherView: 'opened'});
+    }
+  }
+
   render() {
 
-    const {clockPosition} = this.state;
+    const {clockPosition, weatherView} = this.state;
       
     return (
       <div>
@@ -34,6 +48,8 @@ class Layout extends Component {
           clockPosition={clockPosition}
         />
         <WeatherContainer
+          handleWeatherClick={this.handleWeatherClick}
+          weatherView={weatherView}
         />
       </div>
     );

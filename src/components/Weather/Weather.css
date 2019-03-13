@@ -1,8 +1,18 @@
 .weather-container {
+    display: flex;
     position: absolute;
     cursor: default;
     top: 0;
     right: 0;
+    transition: all .5s ease;
+}
+
+.weather-container-closed {
+    color: rosybrown;
+}
+
+.weather-container-opened {
+    color: white;
 }
 
 .weather-temperatura {
