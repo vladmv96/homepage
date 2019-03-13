@@ -8,11 +8,11 @@
 }
 
 .weather-container-closed {
-    color: rosybrown;
+    color: white;
 }
 
 .weather-container-opened {
-    color: white;
+    color: rosybrown;
 }
 
 .weather-temperatura {
